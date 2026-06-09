@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portifolio aura</title>
+</head>
+
+<body>
+    <div class="page">
+        <header class="page-header">
+            <div class="logo">Portifolio aura</div>
+            <nav class="main-nav">
+                <a href="#sobre">Sobre mim</a>
+                <a href="#experimentos">Experimentos</a>
+                <a href="#contatos">Contatos</a>
+            </nav>
+        </header>
+
+        <main class="content">
+            <section class="card hero-card">
+                <div class="hero-image">
+                    <img src="imgs/mclovin.png.png" alt="Foto de Thiago">
+                </div>
+                <div class="hero-copy">
+                    <h1>Thiago Mateus</h1>
+                    <ul class="hero-info">
+                        <li>16 Anos</li>
+                    </ul>
+                    <p>Atualmente aprendendo HTML e CSS e explorando o mundo da programação através de projetos e
+                        estudos.</p>
+                </div>
+            </section>
+
+            <section class="cards-row">
+                <article id="sobre" class="card about-card">
+                    <div class="card-header">
+                        <img src="imgs/book.png" alt="Ícone Sobre Mim">
+                        <h2>Sobre Mim</h2>
+                    </div>
+                    <p class="about-text">Sou estudante do Ensino Médio e atualmente estou aprendendo Desenvolvimento
+                        Web com HTML e CSS. Sempre gostei de tecnologia e de entender como sites e aplicações funcionam.
+                    </p>
+                    <div class="about-columns">
+                        <div class="column">
+                            <span class="column-title">Atualmente estudando</span>
+                            <ul>
+                                <li>HTML básico</li>
+                                <li>CSS básico</li>
+                                <li>Design de Interfaces (UI/UX)</li>
+                                <li>Git e GitHub</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <span class="column-title">Próximos objetivos</span>
+                            <ul>
+                                <li>Aprender JavaScript</li>
+                                <li>Criar projetos próprios</li>
+                                <li>Desenvolver interfaces interativas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card skills-card">
+                    <div class="card-header">
+                        <img src="imgs/rocket.png" alt="Ícone Habilidades">
+                        <h2>Habilidades</h2>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-row">
+                            <span>Python Básico</span>
+                            <img src="imgs/python.png" alt="Python">
+                        </div>
+                        <div class="skill-row">
+                            <span>Inglês intermediario</span>
+                            <img src="imgs/language.png" alt="Inglês">
+                        </div>
+                        <div class="skill-row">
+                            <span>Aprendizado Rapido</span>
+                            <img src="imgs/school.png" alt="Aprendizado">
+                        </div>
+                        <div class="skill-row">
+                            <span>Trabalho em Equipe</span>
+                            <img src="imgs/handshake.png" alt="Trabalho em Equipe">
+                        </div>
+                        <div class="skill-row">
+                            <span>Aprendizado Contínuo</span>
+                            <img src="imgs/swatchbook.png" alt="Aprendizado Contínuo">
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section id="experimentos" class="card experiments-card">
+                <div class="card-header">
+                    <img src="imgs/flask.png" alt="Ícone Experimentos">
+                    <h2>Experimentos</h2>
+                </div>
+
+                <div class="experiments-grid">
+
+                    <!-- Vídeo do YouTube -->
+                    <div class="experiment-video">
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Z1UWsBJ5HgU?si=afTPAsspJEyL2Wkq&amp;controls=0&amp;start=27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <!-- Botões -->
+                    <div class="experiment-column">
+                        <a href="#" class="experiment-button">
+                            Meu GitHub
+                        </a>
+
+                        <a href="#" class="experiment-button">
+                            Meu Portfólio
+                        </a>
+                    </div>
+
+                    <!-- Música do Spotify -->
+                    <div class="experiment-music">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/7oOOI85fVQvVnK5ynNMdW7?utm_source=generator&theme=0&si=9e320eb85a394685"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy">
+                        </iframe>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="contatos" class="card contacts-card">
+                <div class="card-header">
+                    <img src="imgs/address-card.png" alt="Ícone Contatos">
+                    <h2>Contatos</h2>
+                </div>
+                <div class="contact-list">
+                    <div class="contact-item">
+                        <img src="imgs/envelope.png" alt="Email">
+                        <span>Thiagomateus.ds@icloud.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="imgs/phone.png" alt="Telefone">
+                        <span>(87) 98868-3777</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="imgs/github.png" alt="GitHub">
+                        <a href="https://github.com/Thigas031" target="_blank">Thigas031</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

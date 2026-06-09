@@ -1,0 +1,399 @@
+/* Reset básico para remover margens e tornar caixas mais previsíveis */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --page-bg: #111111;
+    --card-bg: #1A1A1A;
+    --text-main: #F2EEE9;
+    --text-secondary: #D8D3CC;
+    --button-bg: #E8E0D3;
+    --link-hover: #00D0FF;
+}
+
+.card {
+    background-color: #1A1A1A;
+}
+
+.experiment-block,
+.experiment-button {
+    background-color: #FFF5E6;
+}
+
+/* Estilos gerais da página */
+body {
+    min-height: 100vh;
+    font-family: Inter, system-ui, sans-serif;
+    color: var(--text-main);
+    background: url("imgs/Background.png") center/cover no-repeat var(--page-bg);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 28px 24px 48px;
+}
+
+/* Header */
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
+    margin-bottom: 24px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.main-nav {
+    display: flex;
+    gap: 36px;
+}
+
+.main-nav a {
+    font-size: 0.95rem;
+    transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.main-nav a:hover {
+    color: var(--link-hover);
+    text-shadow: 0 0 18px rgba(0, 216, 255, 0.35);
+}
+
+/* Conteúdo principal */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card {
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.hero-card {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    min-height: 240px;
+    padding: 40px;
+}
+
+.hero-image {
+    width: 180px;
+    flex-shrink: 0;
+}
+
+.hero-image img {
+    border-radius: 28px;
+}
+
+.hero-copy {
+    flex: 1;
+}
+
+.hero-copy h1 {
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+
+.hero-info {
+    list-style: none;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 18px;
+}
+
+.hero-info li::before {
+    content: "•";
+    color: var(--text-main);
+    display: inline-block;
+    width: 1rem;
+}
+
+.hero-copy p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    max-width: 720px;
+}
+
+.cards-row {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.about-card,
+.skills-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.card-header img {
+    width: 32px;
+}
+
+.card-header h2 {
+    font-size: 1.2rem;
+}
+
+.about-text {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.about-columns {
+    display: flex;
+    gap: 28px;
+}
+
+.column {
+    flex: 1;
+}
+
+.column-title {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.column ul {
+    list-style: none;
+    color: var(--text-secondary);
+    line-height: 1.9;
+}
+
+.column li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 10px;
+}
+
+.column li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--text-main);
+}
+
+/* Habilidades */
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 22px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.skill-row span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.skill-row img {
+    width: 28px;
+}
+
+/* Experimentos */
+.experiments-card {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.experiments-grid {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.experiment-block,
+.experiment-button {
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111111;
+    font-weight: 700;
+}
+
+.experiment-video,
+.experiment-music {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experiment-video iframe,
+.experiment-music iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+.experiment-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+}
+
+.experiment-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 60px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.experiment-button:hover {
+    transform: scale(1.03);
+}
+
+/* Contatos */
+.contacts-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+    min-width: 220px;
+}
+
+.contact-item img {
+    width: 34px;
+}
+
+.contact-item a,
+.contact-item span {
+    font-size: 1rem;
+}
+
+.contact-item a:hover {
+    color: var(--link-hover);
+}
+
+/* Responsividade simples */
+@media (max-width: 1180px) {
+
+    .hero-card,
+    .cards-row,
+    .experiments-grid,
+    .contact-list,
+    .about-columns {
+        flex-direction: column;
+    }
+
+    .hero-card {
+        align-items: flex-start;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 720px) {
+    .page {
+        padding: 20px 18px 36px;
+    }
+
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .main-nav {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .hero-card,
+    .card {
+        padding: 28px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        border-radius: 24px;
+    }
+
+    .skill-row {
+        padding: 16px 18px;
+    }
+
+    .experiment-video,
+    .experiment-music,
+    .experiment-button {
+        min-height: 140px;
+    }
+
+    .experiment-column {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .experiment-button {
+        width: 48%;
+    }
+
+    .contact-list {
+        gap: 16px;
+    }
+}
