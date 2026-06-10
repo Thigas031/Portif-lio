@@ -237,40 +237,45 @@ a {
 
 .experiments-grid {
     display: flex;
-    gap: 24px;
-    align-items: stretch;
-}
-
-.experiment-block,
-.experiment-button {
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
+    align-items: center; /* centraliza todos no mesmo eixo */
     justify-content: center;
-    color: #111111;
-    font-weight: 700;
+    gap: 40px;
 }
 
-.experiment-video,
-.experiment-music {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.experiment-video iframe,
-.experiment-music iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 12px;
+.experiment-video iframe {
+    width: 620px;
+    height: 350px;
+    border-radius: 16px;
 }
 
 .experiment-column {
     display: flex;
     flex-direction: column;
-    gap: 12px;
     justify-content: center;
+    gap: 20px;
+}
+
+.experiment-button {
+    width: 180px;
+    height: 100px;
+}
+
+.experiment-music {
+    display: flex;
+    align-items: center;
+}
+
+.experiment-music iframe {
+    width: 300px;
+    height: 380px;
+    border-radius: 16px;
+}
+
+.experiment-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
 }
 
 .experiment-button {
@@ -278,7 +283,7 @@ a {
     justify-content: center;
     align-items: center;
 
-    width: 100%;
+    width: 120px;
     min-height: 60px;
 
     border-radius: 12px;
